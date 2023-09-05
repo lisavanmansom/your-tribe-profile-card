@@ -13,19 +13,27 @@ body {
   height: 100vh;
   font-family: open sans;
   color: #10214e;
+  
 }
 
 article {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
   width: 50vw;
-  max-width: 25em;
-  min-width: 20em;
+  max-width: 55em;
+  min-width: 45em;
   border-radius: 1rem;
-  background: rgb(255, 255, 255);
+  /* Lettertype, lettergrote, regelafstand, letterafstand & kleur */
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  letter-spacing: 2px;
+  color:rgb(255, 255, 255); ;
+  /* Achtergrond, linear-gradient & schaduw */
+  background: rgb(252,245,69);
+  background: linear-gradient(90deg, rgba(252,245,69,1) 0%, rgba(252,176,69,1) 50%, rgba(55,71,196,1) 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
@@ -39,8 +47,45 @@ header {
 }
 
 h1 {
-  margin: 2rem 0 1rem;
-  color: rgb(0, 0, 0);
+  /* Positie header */
+  position: absolute;
+  top: 1rem;
+  left: 8.9em;
+}
+
+img {
+  margin-top: 0em;
+  margin-left: 0em;
+  width: 12em;
+  height: auto;
+  border: 0px solid #fff;
+  transition: .25s .15s;
+}
+
+.gegevens {
+  /* Positie gegevens */
+  position: absolute;
+  top: 4em;
+  left: 12em;
+}
+
+.educatie-en-skills {
+  /* Positie gegevens */
+  position: absolute;
+  top: 4em;
+  left: 20em;
+  
+}
+
+p { 
+  /* Positie paragraaf */
+  margin: 0;
+  width: 75%;
+  margin-top: 0;
+  margin-left: 12em;
+  padding: 1.2rem 2rem;
+  /* Uitlijning tekst */
+  text-align: left;
 }
 
 button {
@@ -52,7 +97,7 @@ button {
   padding: .25rem;
   border: none;
   border-radius: 50%;
-  background: rgba(84, 126, 85, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   transform: scale(.8);
   transition: .25s;
 }
@@ -74,31 +119,6 @@ svg {
 button svg:nth-of-type(2) {
   opacity: 0;
   transition-delay: 0ms;
-}
-
-img {
-  position: relative;
-  top: 2rem;
-  width: 10em;
-  height: auto;
-  border: 5px solid #fff;
-  border-radius: 10em;
-  box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
-  transition: .25s .15s;
-}
-
-
-p { 
-  margin: 0;
-}
-
-article > p {
-  width: 100%;
-  margin-top: 0;
-  padding: 3rem 2rem;
-  border-radius: 0 0 0rem 0rem;
-  text-align: center;
-  background: rgba(84, 126, 85, 0.5);
 }
 
 /* expand content */
