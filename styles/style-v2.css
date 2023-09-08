@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100vh;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400vh;
+    font-family: open sans;
+    color: #ffffff;
+    
+  }
+
+  .p1-profilecard {
+    display: flexbox;
+    position: absolute;
+    top: 3rem;
+    width: 47rem;
+    height: 23rem;
+    border-radius: 1rem;
+    background: linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(98, 98, 98) 50%, rgb(74, 74, 74) 100%);
+    box-shadow: 0 0 20px 20px rgba(45, 45, 45, 0.1);
+      /* Lettertype, lettergrote, regelafstand, letterafstand & kleur */
+  font-family: sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  letter-spacing: 2px;
+  color:rgb(255, 255, 255);
+  transition: .25s;
+  }
+
+  h1 {
+    position: absolute;
+    transform: rotate(270deg);
+    top: 3.95em;
+    right: 9.3em;
+    font-size: 2.29em;
+    letter-spacing: 2px;
+  }
+
+  img {
+    position: absolute;
+    width: 23.5em;
+    height: auto;
+    top: 0em;
+    right: 29em; 
+  }  
+
+  .about-me-1 {
+    position: absolute;
+    top: 2.5em;
+    left: 20em;
+    font-weight: 500;
+  }
+
+  .about-me-2 {
+    position: absolute;
+    top: 9em;
+    left: 20em;
+    font-weight: 470;
+  }
+
+button {
+  background-color: transparent;
+  border-color: rgb(181, 181, 181);
+  border-radius: 10%;
+  color: rgb(181, 181, 181);
+  outline: none;
+  position: absolute;
+  top: 28em;
+  left: 52em;
+  padding: 0.5em 2em;
+  font-weight: 470;
+  transition: .25s;
+} 
+
+.quote1 {
+color: black;
+}
+
+body.expand article {
+  height: 46em;
+}

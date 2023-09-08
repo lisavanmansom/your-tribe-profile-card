@@ -19,7 +19,7 @@ body {
 article {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
   width: 50vw;
   max-width: 55em;
@@ -30,9 +30,9 @@ article {
   font-size: 1em;
   line-height: 1.2em;
   letter-spacing: 2px;
-  color:rgb(255, 255, 255); ;
+  color:rgb(255, 255, 255);
   /* Achtergrond, linear-gradient & schaduw */
-  background: rgb(252,245,69);
+  background-image: rgb(252,245,69);
   background: linear-gradient(90deg, rgba(252,245,69,1) 0%, rgba(252,176,69,1) 50%, rgba(55,71,196,1) 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
@@ -49,14 +49,16 @@ header {
 h1 {
   /* Positie header */
   position: absolute;
-  top: 1rem;
-  left: 8.9em;
+  top: 0.5em;
+  left: 6.5em;
 }
 
 img {
-  margin-top: 0em;
-  margin-left: 0em;
-  width: 12em;
+    /* Positie image */
+  position: relative;
+  right: 8em;
+    /* formaat image */
+  width: 19em;
   height: auto;
   border: 0px solid #fff;
   transition: .25s .15s;
@@ -65,27 +67,24 @@ img {
 .gegevens {
   /* Positie gegevens */
   position: absolute;
-  top: 4em;
-  left: 12em;
+  top: 3em;
+  left: 8.5em;
 }
 
 .educatie-en-skills {
   /* Positie gegevens */
   position: absolute;
-  top: 4em;
-  left: 20em;
+  top: 3em;
+  left: 3em;
   
 }
 
 p { 
   /* Positie paragraaf */
-  margin: 0;
-  width: 75%;
-  margin-top: 0;
-  margin-left: 12em;
-  padding: 1.2rem 2rem;
+ align-self: flex-end;
   /* Uitlijning tekst */
   text-align: left;
+  max-width: 75%;
 }
 
 button {
@@ -102,7 +101,6 @@ button {
   transition: .25s;
 }
 button:focus {
-  outline: none;
   background: #202592;
 }
 button:focus svg {

@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* formaat */
+    height: 200vh;
+  }
+  
+  body {
+     /* Positie */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      /* formaat */
+    height: 200vh;
+      /* font */
+    font-family: open sans-serif;
+    color: #000000;
+  }
+
+  .p1-profilecard {
+     /* Positie */
+    display: flexbox;
+    position: absolute;
+    top: 3rem;
+     /* formaat */
+    width: 47rem;
+    height: 23rem;
+      /* Vorm, achtergrondkleur, schaduw */
+    border-radius: 1rem;
+    background: linear-gradient(90deg, rgb(46, 46, 46) 0%, rgb(98, 98, 98) 50%, rgb(74, 74, 74) 100%);
+    box-shadow: 0 0 20px 20px rgba(45, 45, 45, 0.1);
+  }  
+
+   img {
+      /* Positie en formaat */
+    position: relative;
+    right: 5em;
+    width: 23.5em;
+    height: auto; 
+  }
+
+  h1 {
+     /* Positie en rotatie */
+    position: absolute;
+    transform: rotate(270deg);
+    top: 3.6em;
+    right: 9em;
+      /* Lettertype, lettergrote, regelafstand, letterafstand & kleur */
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 2.3em;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255)
+  }
+
+  .about-me-1 {
+          /* Positie */
+    position: absolute;
+    top: 3.6em;
+    right: 6em;
+          /* Lettertype, lettergrote, regelafstand, letterafstand & kleur */
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+  }
+
+  .about-me-2 {
+    /* Positie */
+    position: absolute;
+    top: 10em;
+    right: 6em;
+          /* Lettertype, lettergrote, regelafstand, letterafstand & kleur */
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+  }
+
+  button {
+     /* Vormgeving: achtergrondkleur, randkleur */
+    background-color: transparent;
+    border-color: rgb(181, 181, 181);
+    border-radius: 10%;
+    color: rgb(181, 181, 181);
+    outline: none;
+      /* Positie */
+    position: absolute;
+    top: 28em;
+    left: 52em;
+    padding: 0.5em 2em;
+    font-weight: 470;
+    transition: .25s;
+  } 
+
